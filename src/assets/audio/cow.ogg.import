@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cow.ogg-82ed45fec86dbbb5cfaa505b005e3e51.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/cow.ogg"
+dest_files=[ "res://.import/cow.ogg-82ed45fec86dbbb5cfaa505b005e3e51.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

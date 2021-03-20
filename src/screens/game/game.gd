@@ -42,7 +42,7 @@ func on_card_pressed(card):
 		card2 = card
 		card2.flip()
 		card2.set_disabled(true)
-		flip_timer.start(1)
+		flip_timer.start(2)
 		
 func check_cards():
 	print_debug(card1.type, card2.type)

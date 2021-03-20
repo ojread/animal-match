@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/frog.ogg-509d5259d9773f32b6ab01227f85f1c9.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/frog.ogg"
+dest_files=[ "res://.import/frog.ogg-509d5259d9773f32b6ab01227f85f1c9.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

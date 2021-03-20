@@ -9,7 +9,7 @@ func init(new_type):
 	type = new_type
 	face = load("res://assets/textures/" + str(type) + ".png")
 	back = load("res://assets/textures/card_back.png")
-	audio = load("res://assets/audio/" + str(type) + ".wav")
+	audio = load("res://assets/audio/" + str(type) + ".ogg")
 	if audio:
 		$AudioStreamPlayer.set("stream", audio)
 	set_normal_texture(back)

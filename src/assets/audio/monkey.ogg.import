@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/monkey.ogg-b6872238cb681d9bbafddde720ccee10.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/monkey.ogg"
+dest_files=[ "res://.import/monkey.ogg-b6872238cb681d9bbafddde720ccee10.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
