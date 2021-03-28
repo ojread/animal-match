@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/game/game.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/SomeTimeLaterMedium.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/fonts/SomeTimeLaterLarge.tres" type="DynamicFont" id=4]
+
+[node name="Game" type="MarginContainer"]
+margin_right = 1280.0
+margin_bottom = 800.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1260.0
+margin_bottom = 780.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Cards" type="GridContainer" parent="HBoxContainer"]
+margin_right = 1084.0
+margin_bottom = 760.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/vseparation = 20
+custom_constants/hseparation = 20
+columns = 4
+
+[node name="ScorePanel" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 1088.0
+margin_right = 1240.0
+margin_bottom = 760.0
+
+[node name="ScoreLabelText" type="Label" parent="HBoxContainer/ScorePanel"]
+margin_right = 152.0
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score"
+align = 1
+
+[node name="ScoreLabel" type="Label" parent="HBoxContainer/ScorePanel"]
+margin_top = 69.0
+margin_right = 152.0
+margin_bottom = 198.0
+custom_fonts/font = ExtResource( 4 )
+text = "0"
+align = 1
+
+[node name="GameOverLabel" type="Label" parent="."]
+visible = false
+margin_left = 20.0
+margin_top = 335.0
+margin_right = 1260.0
+margin_bottom = 464.0
+custom_fonts/font = ExtResource( 4 )
+text = "Game over!"
+align = 1

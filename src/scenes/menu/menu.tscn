@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu/menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/SomeTimeLaterLarge.tres" type="DynamicFont" id=2]
+
+[node name="Menu" type="MarginContainer"]
+margin_left = 300.0
+margin_top = 200.0
+margin_right = 980.0
+margin_bottom = 600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+margin_right = 700.0
+margin_bottom = 400.0
+
+[node name="Label" type="Label" parent="VSplitContainer"]
+margin_right = 700.0
+margin_bottom = 129.0
+custom_fonts/font = ExtResource( 2 )
+text = "Animal Match"
+align = 1
+valign = 1
+
+[node name="StartButton" type="Button" parent="VSplitContainer"]
+margin_top = 141.0
+margin_right = 700.0
+margin_bottom = 400.0
+custom_fonts/font = ExtResource( 2 )
+text = "Start"
+[connection signal="pressed" from="VSplitContainer/StartButton" to="." method="_on_StartButton_pressed"]
